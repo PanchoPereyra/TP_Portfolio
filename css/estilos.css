@@ -5,3 +5,34 @@
     padding: 0px;
     margin: 0px;
   }
+
+  .barraNav {
+    background-color: ghostwhite;
+  }
+
+  .hero {
+    height: 60vh;
+    background-color: #f54f4f;
+
+  }
+
+  .containerProyectos{
+    background-color: blue;
+
+  }
+
+  .experiencia{
+    background-color: aqua;
+  }
+
+  .habilidades{
+    background-color: brown;
+  }
+
+  .miHistoria{
+    background-color: chartreuse;
+  }
+
+  footer{
+    background-color: darkolivegreen;
+  }
