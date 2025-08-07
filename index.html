@@ -9,23 +9,39 @@
 </head>
 
 <body>
-    <div class="barraNav">
+    <header>
         <nav>
-            <a href="#">Home</a>
-            <a href="#">Proyectos</a>
-            <a href="#">Sobre mi</a>
+            <div class="logo">Pancho</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+            </div>
         </nav>
-    </div>
+        <hr>
 
-    <section class="hero">
-        <h3>Hola soy Francisco</h3>
-        <h1>FullStack Developer</h1>
-        <p></p>
-        <button>Get in Touch</button>
-        <button>Browse Projects</button>
-        <img src="" alt="">
-    </section>
+        <section class="hero">
+            <div class="texto-hero">
+                <h3>Hola soy Francisco</h3>
+                <h1 class="h1-hero"><span>FullStack</span><br> Developer</h1>
+                <p>I'm a frontend developer based in Italy. I’ll help you build beautiful websites your users will love.</p>
+                <button>Get in Touch</button>
+                <button>Browse Projects</button>
+            </div>
 
+            <div class="imagen-hero">
+                <img src="img/avatar.jpg" alt="">
+            </div>
+
+            <!-- <div>
+                <button>Get in Touch</button>
+                <button>Browse Projects</button>
+            </div> -->
+        </section>
+
+    </header>
+    <hr>
     <main>
         <!-- PROYECTOS -->
         <section class="containerProyectos">
@@ -36,10 +52,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem impedit reiciendis rem veritatis esse
                     velit provident, molestias omnis. Excepturi placeat mollitia nostrum ipsam corporis similique. Quos
                     sequi nesciunt itaque quia?</p>
-
-
                 <img src="" alt="">
-
                 <h4>EcoCart</h4>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto debitis labore dolor eligendi ipsam,
                     delectus maiores rem a atque. Ad iusto eveniet, deleniti suscipit similique iure vitae enim dicta
@@ -47,16 +60,12 @@
             </div>
             <div>
                 <img src="" alt="">
-
                 <h4>EventPlanner</h4>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem hic sed dolorum excepturi
                     explicabo
                     ex facilis nisi quae aliquam, temporibus, ipsam labore asperiores eaque voluptate maxime, sunt nobis
                     quaerat ea.</p>
-
-
                 <img src="" alt="">
-
                 <h4>FoodieFlinder</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, porro ab. Molestiae aspernatur et
                     architecto quas enim veritatis natus reiciendis, a repellat dolorum fugit laudantium est culpa quos
@@ -65,10 +74,11 @@
         </section>
 
         <!-- EXPERIENCIA -->
-        <div class="experiencia">
-            <h2>Experience<span>.</span></h2>
-
-        </div>
+        <section>
+            <div class="experiencia">
+                <h2>Experience<span>.</span></h2>
+            </div>
+        </section>
 
         <!-- SKILLS -->
         <section class="habilidades">
@@ -83,7 +93,6 @@
                     <li>User Research</li>
                 </ul>
             </div>
-
             <div>
                 <h4>Frontend</h4>
                 <ul>
@@ -94,7 +103,6 @@
                     <li>CSS3</li>
                 </ul>
             </div>
-
             <div>
                 <h4>Backend</h4>
                 <ul>
@@ -105,7 +113,6 @@
                     <li>Vercel</li>
                 </ul>
             </div>
-
             <div>
                 <h4>Soft Skills</h4>
                 <ul>
@@ -119,13 +126,13 @@
         </section>
 
         <!-- MY STORY -->
-        <div class="miHistoria">
+        <section class="miHistoria">
             <h2>My Story<span>.</span></h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam rerum in doloribus, similique
                 voluptate
                 laborum illum consequuntur officiis voluptatibus natus magnam mollitia quaerat modi est id sed quam,
                 nesciunt dignissimos?</p>
-        </div>
+        </section>
     </main>
 
     <footer>
@@ -155,10 +162,11 @@
             <a href="">
                 <img src="img/whatsapp.png" alt="">
             </a>
-
         </div>
+        <p>&copy;2025 All Rights Reserved. Made by Pancho Pereyra</p>
     </footer>
 
+    <script src="js/app.js"></script>
 </body>
 
 </html>

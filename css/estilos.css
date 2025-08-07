@@ -6,33 +6,124 @@
     margin: 0px;
   }
 
-  .barraNav {
-    background-color: ghostwhite;
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+    color: black;
+    padding: 10px 25px;
+    line-height: 1.5;
+    width: 900px;
+    margin: 5px auto;
   }
 
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  span {
+    color: #2caf20;
+  }
+
+  p{
+    margin-bottom: 15px;
+  }
+
+  button{
+    border-radius: 8px black solid;
+    padding: 8px;
+    margin-right: 7px;
+  }
+
+  .logo {
+    font-size: 17px;
+    font-weight: bold;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 30px;
+  }
+
+  .nav-links a {
+    color: #1e1e1e;
+    font-weight: 17px;
+    position: relative;
+    font-weight: bold;
+    display: inline-block;
+    /* Necesario para aplicar transform */
+  }
+
+  .nav-links a:hover {
+    color: #2caf20;
+    transform: scale(1.1);
+    /* Agranda 10% */
+  }
+
+  /************************* HASTA ACA LA CABECERA ******************************/
   .hero {
     height: 60vh;
-    background-color: #f54f4f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    /* separación entre los cuadros */
+   
 
   }
 
-  .containerProyectos{
+  .imagen-hero img {
+    width: 100%;   /* ocupará el 100% del div que ya tiene 45% del padre */
+    max-width: 250px;   /* límite máximo para que no se agrande demasiado */
+    border-radius: 50%;
+    border: 2px black solid;
+    outline: 2px black solid;
+    outline-offset: 5px;
+    /* Más negativo = líneas más juntas */
+    
+  }
+
+  .texto-hero{
+     border-radius: 5px solid black;
+     width: 45%;
+     line-height: 2;
+  }
+
+.h1-hero{
+  font-size: 65px;
+  display: block;
+  line-height: 1.1;
+  margin-bottom: 15px;
+}
+
+
+
+  .containerProyectos {
     background-color: blue;
-
   }
 
-  .experiencia{
+  .experiencia {
     background-color: aqua;
   }
 
-  .habilidades{
+  .habilidades {
     background-color: brown;
   }
 
-  .miHistoria{
+  .miHistoria {
     background-color: chartreuse;
   }
 
-  footer{
+  footer {
     background-color: darkolivegreen;
   }
