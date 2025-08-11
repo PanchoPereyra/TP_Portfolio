@@ -119,24 +119,90 @@
   /************************* HASTA ACA HERO ******************************/
 
   .containerProyectos {
-    background-color: blue;
+    background-color: white;
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px 20px;
+    background-color: #2caf20;
+
+  }
+
+  .proyectosGrid {
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    /*columna 1 y columna 2 respectivamente*/
     grid-template-rows: 1fr 1fr;
+    /*renglon 1 y renglon 2 respectivamente*/
+    gap: 20px;
+    /* Espacio entre tarjetas */
+    
   }
 
-  img {
+  .tarjeta {
     display: flex;
+    flex-direction: column;
+    /* Para que la imagen quede arriba y el texto abajo */
+    align-items: center;
+    /* Centra horizontal */
     justify-content: center;
-    border-radius: 8px;
-    width: 400px;
-    height: 300px;
-
+    /* Centra vertical */
+    text-align: center;
+    /* Centra el texto */
+    background: #2caf20; 
   }
 
+  .tarjeta img {
+    width: 100%;
+    display: block;
+    min-width: 200px;
+    max-width: 300px;
+    height: 250px;
+    padding-top: 30px;
+    border-radius: 3px;
+  }
+
+  .tarjeta h4 {
+    margin: 15px 10px 5px;
+    font-size: 1.2rem;
+  }
+
+  .tarjeta p {
+    /* margin: 0 10px 15px; */
+    font-size: 0.9rem;
+    color: black;
+  }
+
+  /*PARA HACER EL BOTON CON UN LINK*/
+  /* a{
+    border: black solid;
+    border-radius: 5px;
+    padding: 5px;
+    border-width: 2px;
+    font-weight: bold;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  } */
+
+  /************************* HASTA ACA PROYECTOS ******************************/
   .experiencia {
     background-color: aqua;
   }
+
+  .gridExperiencia{
+    display: grid;
+  grid-template-columns: (2, 250px);
+  grid-template-rows: repeat(5, 50px);
+  gap: 10px;
+  background: grey;
+  height: 300px;
+
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  align-content: center
+  }
+
+  /************************* HASTA ACA EXPERIENCIA ******************************/
 
   .habilidades {
     background-color: brown;
