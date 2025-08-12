@@ -1,14 +1,25 @@
   /*Link de fuentes: como mucho 2 fuentes se recomienda*/
 
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
   /*Selector universal*/
   * {
     padding: 0px;
     margin: 0px;
   }
 
+  /*para "suavizar" el paso*/
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: white;
+    background-color: rgb(252, 252, 252);
     color: black;
     padding: 10px 25px;
     line-height: 1.5;
@@ -20,7 +31,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 10px;
+    padding: 5px 8px;
   }
 
   a {
@@ -42,7 +53,7 @@
   button {
     padding: 8px;
     margin-right: 7px;
-    background-color: white;
+    background-color: rgb(252, 252, 252);
     border-radius: 6px;
     border: 2px solid black;
     font-weight: bold;
@@ -60,11 +71,11 @@
 
   .nav-links {
     display: flex;
-    gap: 30px;
+    gap: 17px;
   }
 
   .nav-links a {
-    color: #1e1e1e;
+    color: black;
     font-weight: 17px;
     position: relative;
     font-weight: bold;
@@ -86,8 +97,7 @@
     align-items: center;
     gap: 15px;
     /* separación entre los cuadros */
-
-
+    margin-bottom: 60px;
   }
 
   .imagen-hero img {
@@ -113,17 +123,18 @@
     font-size: 65px;
     display: block;
     line-height: 1.1;
-    margin-bottom: 15px;
+    margin-bottom: 60px;
   }
 
   /************************* HASTA ACA HERO ******************************/
 
   .containerProyectos {
-    background-color: white;
+    background-color: rgb(252, 252, 252);
     max-width: 1100px;
     margin: auto;
     padding: 40px 20px;
-    background-color: #2caf20;
+    margin-bottom: 60px;
+    margin-top: 15px;
 
   }
 
@@ -135,7 +146,7 @@
     /*renglon 1 y renglon 2 respectivamente*/
     gap: 20px;
     /* Espacio entre tarjetas */
-    
+
   }
 
   .tarjeta {
@@ -148,7 +159,9 @@
     /* Centra vertical */
     text-align: center;
     /* Centra el texto */
-    background: #2caf20; 
+    background: rgb(252, 252, 252);
+    border: black solid 2px;
+    border-radius: 3px;
   }
 
   .tarjeta img {
@@ -185,33 +198,161 @@
 
   /************************* HASTA ACA PROYECTOS ******************************/
   .experiencia {
-    background-color: aqua;
+    background-color: rgb(252, 252, 252);
+    margin-bottom: 60px;
+    margin-top: 15px;
   }
 
-  .gridExperiencia{
-    display: grid;
-  grid-template-columns: (2, 250px);
-  grid-template-rows: repeat(5, 50px);
-  gap: 10px;
-  background: grey;
-  height: 300px;
+  .gridExperiencia {}
 
-  justify-items: center;
-  align-items: center;
-  justify-content: center;
-  align-content: center
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 445px);
+    /* 2 columnas iguales */
+    grid-template-rows: repeat(4, 80px);
+    /* 4 filas de 80px */
+    gap: 5px;
+    /* Espacio entre celdas */
+    max-width: 400px;
+    /* margin: auto; */
+  }
+
+  .grid div {
+    background: withe;
+    color: black;
+    display: flex;
+    align-items: center;
+    /* font-weight: bold; */
+    /* border-radius: 5px; */
+    padding-left: 10px;
   }
 
   /************************* HASTA ACA EXPERIENCIA ******************************/
 
   .habilidades {
-    background-color: brown;
+    background-color: rgb(252, 252, 252);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 60px;
+    margin-top: 15px;
   }
 
+  .diseñoWeb {}
+
+  .frontend {}
+
+  .backend {}
+
+  .skills {}
+
+
+
+  /************************* HASTA ACA HABILIDADES ******************************/
   .miHistoria {
-    background-color: chartreuse;
+    background-color: rgb(252, 252, 252);
+    margin-bottom: 60px;
+    margin-top: 15px;
   }
+
+  /************************* HASTA ACA MI HISTORIA ******************************/
+
+/* ===== Contacto ===== */
+.contacto {
+    padding: 2rem;
+    background: #f5f5f5;
+}
+
+.contacto form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 400px;
+}
+
+.contacto input,
+.contacto textarea {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+}
+
+.contacto button {
+    background: rgb(252, 252, 252);
+    color: #fff;
+    border: none;
+    padding: 0.7rem;
+    cursor: pointer;
+}
+
+.contacto button:hover {
+    background: #2caf20;
+}
+
+
 
   footer {
-    background-color: darkolivegreen;
+    background-color: rgb(252, 252, 252);
+    padding: 0px;
+  }
+
+  .arriba{
+    display: flex;
+  }
+
+  .pie {
+    /* border: black solid; */
+    display: flex;
+    text-align: center;
+    width: 50%;
+  }
+
+  .enlaceFooter {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+  }
+
+  .enlaceFooter a{
+    color: black;
+    font-weight: 17px;
+    position: relative;
+    font-weight: bold;
+    display: inline-block;
+  }
+
+  .enlaceFooter a:hover{
+    color: #2caf20;
+    transform: scale(1.1);
+  }
+
+  .redes {
+    /* border: black solid; */
+    display: flex;
+    justify-content: end;
+    width: 50%;
+  }
+
+  .redes img {
+    width: 25px;
+    margin: 10px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .abajo{
+    display: flex;
+  }
+  .botones{
+    /* border: black solid; */
+    width: 50%;
+  }
+
+  .copy{
+    /* border: red solid; */
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 50%;
   }

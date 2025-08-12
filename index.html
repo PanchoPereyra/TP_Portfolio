@@ -11,11 +11,14 @@
 <body>
     <header>
         <nav>
-            <div class="logo">Pancho</div>
+            <div class="logo">Francisco</div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#about">Sobre Mi</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
             </div>
         </nav>
@@ -40,6 +43,11 @@
 
     <main>
         <!-- PROYECTOS -->
+        <div>
+            <h2 id="projects">Proyectos<span>.</span></h2>
+        </div>
+        <hr>
+
         <section class="containerProyectos">
             <div class="proyectosGrid">
                 <div class="tarjeta">
@@ -67,24 +75,33 @@
         </section>
 
         <!-- EXPERIENCIA -->
-        <section>
-            <div class="experiencia">
-                <h2>Experience<span>.</span></h2>
-                <div class="gridExperiencia">
-                    <div class="item">Item 1</div>
-                    <div class="item">Item 2</div>
-                    <div class="item">Item 3</div>
-                    <div class="item">Item 4</div>
-                    <div class="item">Item 5</div>
+        <section class="experiencia">
+            <div>
+                <h2 id="experiencia">Experience<span>.</span></h2>
+            </div>
+            <hr>
+            <div class="gridExperiencia">
+                <div class="grid">
+                    <div>DPV (Dirección Provincial de Vialidad)</div>
+                    <div>Área Informática</div>
+                    <div>Securion</div>
+                    <div>Área de desarrollo</div>
+                    <div>Securitas Argentina</div>
+                    <div>Área de desarrollo</div>
+                    <div>Trailback S.A.</div>
+                    <div>Área Técnica</div>
                 </div>
-
             </div>
         </section>
 
         <!-- SKILLS -->
+
+        <div>
+            <h2 id="skills">Skills<span>.</span></h2>
+        </div>
+        <hr>
         <section class="habilidades">
-            <h2>Skills<span>.</span></h2>
-            <div>
+            <div class="diseñoWeb">
                 <h4>Web Design</h4>
                 <ul>
                     <!-- Desde el CSS despues sacar los puntos con list-none -->
@@ -94,7 +111,7 @@
                     <li>User Research</li>
                 </ul>
             </div>
-            <div>
+            <div class="frontend">
                 <h4>Frontend</h4>
                 <ul>
                     <!-- Desde el CSS despues sacar los puntos con list-none -->
@@ -104,7 +121,7 @@
                     <li>CSS3</li>
                 </ul>
             </div>
-            <div>
+            <div class="backend">
                 <h4>Backend</h4>
                 <ul>
                     <!-- Desde el CSS despues sacar los puntos con list-none -->
@@ -114,7 +131,7 @@
                     <li>Vercel</li>
                 </ul>
             </div>
-            <div>
+            <div class="skills">
                 <h4>Soft Skills</h4>
                 <ul>
                     <!-- Desde el CSS despues sacar los puntos con list-none -->
@@ -127,44 +144,79 @@
         </section>
 
         <!-- MY STORY -->
+        <div>
+            <h2 id="about">My Story<span>.</span></h2>
+        </div>
+        <hr>
         <section class="miHistoria">
-            <h2>My Story<span>.</span></h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam rerum in doloribus, similique
                 voluptate
                 laborum illum consequuntur officiis voluptatibus natus magnam mollitia quaerat modi est id sed quam,
-                nesciunt dignissimos?</p>
+                nesciunt dignissimos?
+            </p>
         </section>
     </main>
 
+    <!-- ===== Contacto ===== -->
+    <div>
+        <h2 id="contacto">Contacto</h2>
+    </div>
+    <hr>
+    <section class="contacto">
+        <form>
+            <input type="text" placeholder="Nombre" required>
+            <input type="email" placeholder="Correo electrónico" required>
+            <textarea placeholder="Mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- FOOTER -->
     <footer>
+        <div class="arriba">
+            <div class="pie">
+                <ul class="enlaceFooter">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#about">Sobre Mi</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="redes">
+                <a href="https://www.facebook.com">
+                    <img src="img/facebook.png" alt="">
+                </a>
+                <a href="https://github.com/">
+                    <img src="img/github.png" alt="">
+                </a>
 
-        <div>
-            <h3>Interested in working together?</h3>
-            <button>Get In Touch</button>
-            <button>Browse Projects</button>
+                <a href="https://www.instagram.com">
+                    <img src="img/instagram.png" alt="">
+                </a>
+
+                <a href="https://ar.linkedin.com/">
+                    <img src="img/linkedin.png" alt="">
+                </a>
+
+                <a href="https://www.whatsapp.com">
+                    <img src="img/whatsapp.png" alt="">
+                </a>
+            </div>
         </div>
 
-        <div>
-            <a href="">
-                <img src="img/facebook.png" alt="">
-            </a>
-            <a href="">
-                <img src="img/github.png" alt="">
-            </a>
-
-            <a href="">
-                <img src="img/instagram.png" alt="">
-            </a>
-
-            <a href="">
-                <img src="img/linkedin.png" alt="">
-            </a>
-
-            <a href="">
-                <img src="img/whatsapp.png" alt="">
-            </a>
+        <div class="abajo">
+            <div class="botones">
+                <h3>Interested in working together <span>?</span></h3>
+                <button>Get In Touch</button>
+                <button>Browse Projects</button>
+            </div>
+            <div class="copy">
+                <p>&copy;2025 All Rights Reserved. Made by Pancho Pereyra</p>
+            </div>
         </div>
-        <p>&copy;2025 All Rights Reserved. Made by Pancho Pereyra</p>
+
     </footer>
 
     <script src="js/app.js"></script>
