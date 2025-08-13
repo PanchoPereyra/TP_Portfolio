@@ -5,81 +5,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilos.css">
-    <title>Práctico Final Nº1</title>
+    <title>Portfolio Profesional - Juan Francisco Pereyra - TP Final</title>
 </head>
 
 <body>
     <header>
         <nav>
-            <div class="logo">Francisco</div>
+            <h1 class="logo">Francisco</h1>
+            <!-- <button class="menu-toggle" id="menu-toggle">
+                ☰
+            </button> -->
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#about">Sobre Mi</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#home" target="_blank">Home</a></li>
+                <li><a href="#projects" target="_blank">Projects</a></li>
+                <li><a href="#experiencia" target="_blank">Experience</a></li>
+                <li><a href="#skills" target="_blank">Skills</a></li>
+                <li><a href="#about" target="_blank">Sobre Mi</a></li>
+                <li><a href="#contacto" target="_blank">Contacto</a></li>
             </ul>
             </div>
         </nav>
         <hr>
+    </header>
 
+    <main>
+        <!-- PRESENTACION -->
         <section class="hero">
             <div class="texto-hero">
-                <h3>Hola soy Francisco</h3>
+                <h3 id="home">Hola soy Francisco</h3>
                 <h1 class="h1-hero"><span>FullStack</span><br> Developer</h1>
                 <p>I'm a frontend developer based in Italy. I’ll help you build beautiful websites your users will love.
                 </p>
                 <button>Get in Touch</button>
                 <button>Browse Projects</button>
-                <!-- <a href="">Browse Projects</a> -->
             </div>
             <div class="imagen-hero">
                 <img src="img/avatar.jpg" alt="">
             </div>
         </section>
 
-    </header>
 
-    <main>
+
         <!-- PROYECTOS -->
         <div>
             <h2 id="projects">Proyectos<span>.</span></h2>
         </div>
-        <hr>
-
+        <!-- <hr> -->
         <section class="containerProyectos">
-            <div class="proyectosGrid">
-                <div class="tarjeta">
-                    <img src="img/dashboardVerde.jpg" alt="">
-                    <h4>TaskFlow</h4>
-                    <p>Task management system with drag-and-drop, real-time collaboration, and responsive layout.</p>
-                </div>
-                <div class="tarjeta">
-                    <img src="img/EcoCartVerde.webp" alt="">
-                    <h4>EcoCart</h4>
-                    <p>E-commerce platform promoting eco-friendly products with payment integration.</p>
-                </div>
+            <div class="tarjeta">
+                <img src="img/dashboardVerde.jpg" alt="">
+                <h4>Tarjeta Personal</h4>
+                <p>Crear una pequeña tarjeta de presentación personal utilizando HTML y CSS sin Flexbox.</p>
+                <a href="#" target="_blank">Ver más</a>
+            </div>
+            <div class="tarjeta">
+                <img src="img/EcoCartVerde.webp" alt="">
+                <h4>Menú Digital</h4>
+                <p>Crear una página web simple que muestre el menú de un restaurante ficticio. Sólo con HTML y CSS</p>
+                <a href="#" target="_blank">Ver más</a>
+            </div>
 
-                <div class="tarjeta">
-                    <img src="img/almanaqueVerde.jpg" alt="">
-                    <h4>EventPlanner</h4>
-                    <p>Event planning web application, enabling users to organise and manage events effortlessly.</p>
-                </div>
-                <div class="tarjeta">
-                    <img src="img/menuComidaVerde.jpg" alt="">
-                    <h4>FoodieFlinder</h4>
-                    <p>Modern restaurant discovery platform featuring real-time search, reviews, and ratings.</p>
-                </div>
+            <div class="tarjeta">
+                <img src="img/almanaqueVerde.jpg" alt="">
+                <h4>Replica de diseño Web</h4>
+                <p>El objetivo de este trabajo práctico es replicar lo más fielmente posible el diseño de una página web
+                    (enlace provisto más abajo), aplicando todo lo aprendido hasta el momento sobre HTML, CSS y,
+                    especialmente, el uso de Flexbox para la maquetación.</p>
+                <a href="#" target="_blank">Ver más</a>
             </div>
         </section>
 
         <!-- EXPERIENCIA -->
+        <div>
+            <h2 id="experiencia">Experience<span>.</span></h2>
+        </div>
         <section class="experiencia">
-            <div>
-                <h2 id="experiencia">Experience<span>.</span></h2>
-            </div>
-            <hr>
+
+            <!-- <hr> -->
             <div class="gridExperiencia">
                 <div class="grid">
                     <div>DPV (Dirección Provincial de Vialidad)</div>
@@ -99,7 +101,7 @@
         <div>
             <h2 id="skills">Skills<span>.</span></h2>
         </div>
-        <hr>
+        <!-- <hr> -->
         <section class="habilidades">
             <div class="diseñoWeb">
                 <h4>Web Design</h4>
@@ -147,7 +149,7 @@
         <div>
             <h2 id="about">My Story<span>.</span></h2>
         </div>
-        <hr>
+        <!-- <hr> -->
         <section class="miHistoria">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam rerum in doloribus, similique
                 voluptate
@@ -157,11 +159,11 @@
         </section>
     </main>
 
-    <!-- ===== Contacto ===== -->
+    <!-- FORMULARIO -->
     <div>
         <h2 id="contacto">Contacto</h2>
     </div>
-    <hr>
+    <!-- <hr> -->
     <section class="contacto">
         <form>
             <input type="text" placeholder="Nombre" required>
@@ -176,31 +178,31 @@
         <div class="arriba">
             <div class="pie">
                 <ul class="enlaceFooter">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#about">Sobre Mi</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#home" target="_blank">Home</a></li>
+                    <li><a href="#projects" target="_blank">Projects</a></li>
+                    <li><a href="#experiencia" target="_blank">Experience</a></li>
+                    <li><a href="#skills" target="_blank">Skills</a></li>
+                    <li><a href="#about" target="_blank">Sobre Mi</a></li>
+                    <li><a href="#contacto" target="_blank">Contacto</a></li>
                 </ul>
             </div>
             <div class="redes">
-                <a href="https://www.facebook.com">
+                <a href="https://www.facebook.com" target="_blank">
                     <img src="img/facebook.png" alt="">
                 </a>
-                <a href="https://github.com/">
+                <a href="https://github.com/" target="_blank">
                     <img src="img/github.png" alt="">
                 </a>
 
-                <a href="https://www.instagram.com">
+                <a href="https://www.instagram.com" target="_blank">
                     <img src="img/instagram.png" alt="">
                 </a>
 
-                <a href="https://ar.linkedin.com/">
+                <a href="https://ar.linkedin.com/" target="_blank">
                     <img src="img/linkedin.png" alt="">
                 </a>
 
-                <a href="https://www.whatsapp.com">
+                <a href="https://www.whatsapp.com" target="_blank">
                     <img src="img/whatsapp.png" alt="">
                 </a>
             </div>
