@@ -16,35 +16,34 @@
                 ☰
             </button> -->
             <ul class="nav-links">
-                <li><a href="#home" target="_blank">Home</a></li>
-                <li><a href="#projects" target="_blank">Projects</a></li>
-                <li><a href="#experiencia" target="_blank">Experience</a></li>
-                <li><a href="#skills" target="_blank">Skills</a></li>
-                <li><a href="#about" target="_blank">Sobre Mi</a></li>
-                <li><a href="#contacto" target="_blank">Contacto</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experiencia">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#about">Sobre Mi</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
             </div>
         </nav>
         <hr>
     </header>
-
     <main>
+
         <!-- ===================== PRESENTACION ===================== -->
         <section class="hero">
             <div class="texto-hero">
                 <h3 id="home">Hola soy Francisco</h3>
-                <h1 class="h1-hero"><span>FullStack</span><br> Developer</h1>
-                <p>I'm a frontend developer based in Italy. I’ll help you build beautiful websites your users will love.
-                </p>
-                <button>Get in Touch</button>
-                <button>Browse Projects</button>
+                <h1 class="h1-hero"><span>Full-Stack</span><br> Developer</h1>
+                <p>Me encuentro en busca de insertarme en el ámbito del desarrollo de software, combinando mi formación
+                    en electrónica con nuevas habilidades en programación para crear soluciones integrales y eficientes.
+
+                    <button class="botonHero">Contacto</button>
+                    <button class="botonHero">Buscar Proyecto</button>
             </div>
             <div class="imagen-hero">
                 <img src="img/avatar.jpg" alt="">
             </div>
         </section>
-
-
 
         <!-- ===================== PROYECTOS ===================== -->
         <section class="proyectos">
@@ -107,7 +106,6 @@
                     ipsum! Laborum repellat iure molestias possimus quod nemo id vitae obcaecati sapiente,
                     excepturi optio amet corporis maxime labore exercitationem sit.
                 </p>
-
             </div>
         </section>
 
@@ -115,66 +113,69 @@
 
         <section class="contenedorHabilidades">
             <h2 id="skills">Skills<span>.</span></h2>
-            <div class="habilidades">
-                <h4>Web Design</h4>
-                <ul>
-                    <!-- Desde el CSS despues sacar los puntos con list-none -->
-                    <li>UX/UI Desing</li>
-                    <li>Responsive Design</li>
-                    <li>Wireframing</li>
-                    <li>User Research</li>
-                </ul>
-            </div>
-            <div class="habilidades">
-                <h4>Frontend</h4>
-                <ul>
-                    <li>Javascript</li>
-                    <li>ReactJS</li>
-                    <li>NextJS</li>
-                    <li>CSS3</li>
-                </ul>
-            </div>
-            <div class="habilidades">
-                <h4>Backend</h4>
-                <ul>
-                    <li>NodeJS</li>
-                    <li>MongoDB</li>
-                    <li>ExpressJS</li>
-                    <li>Vercel</li>
-                </ul>
-            </div>
-            <div class="habilidades">
-                <h4>Soft Skills</h4>
-                <ul>
-                    <li>Effective communication</li>
-                    <li>Collaboration</li>
-                    <li>Commitment</li>
-                    <li>Leadership</li>
-                </ul>
+            <div class="habilidades-container">
+                <div class="habilidades">
+                    <h4>Web Design</h4>
+                    <ul>
+                        <!-- Desde el CSS despues sacar los puntos con list-none -->
+                        <li>UX/UI Desing</li>
+                        <li>Responsive Design</li>
+                        <li>Wireframing</li>
+                        <li>User Research</li>
+                    </ul>
+                </div>
+                <div class="habilidades">
+                    <h4>Frontend</h4>
+                    <ul>
+                        <li>Javascript</li>
+                        <li>ReactJS</li>
+                        <li>NextJS</li>
+                        <li>CSS3</li>
+                    </ul>
+                </div>
+                <div class="habilidades">
+                    <h4>Backend</h4>
+                    <ul>
+                        <li>NodeJS</li>
+                        <li>MongoDB</li>
+                        <li>ExpressJS</li>
+                        <li>Vercel</li>
+                    </ul>
+                </div>
+                <div class="habilidades">
+                    <h4>Soft Skills</h4>
+                    <ul>
+                        <li>Effective communication</li>
+                        <li>Collaboration</li>
+                        <li>Commitment</li>
+                        <li>Leadership</li>
+                    </ul>
+                </div>
             </div>
         </section>
 
         <!-- ===================== MY STORY ===================== -->
 
         <section class="miHistoria">
-            <h2 id="about">My Story<span>.</span></h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam rerum in doloribus, similique
-                voluptate
-                laborum illum consequuntur officiis voluptatibus natus magnam mollitia quaerat modi est id sed quam,
-                nesciunt dignissimos?
+            <h2 id="about">Sobre mi<span>.</span></h2>
+            <p>Soy Ingeniero Electrónico, graduado en la UTN – Facultad Regional Paraná, y actualmente estoy finalizando
+                la Tecnicatura en Programación en la misma institución.
+                Me apasiona la tecnología y siempre busco aprender e incorporar nuevos conocimientos, explorando tanto
+                el desarrollo de software como la electrónica aplicada.
             </p>
         </section>
     </main>
 
     <!--  ===================== FORMULARIO ===================== -->
-   
+
     <section class="contacto">
-        <h2 id="contacto">Contacto</h2>
-        <form>
-            <input type="text" placeholder="Nombre" required>
+        <h2 id="contacto">Contacto<span>.</span></h2>
+        <form id="contactForm">
+            <input name="name" type="text" placeholder="Nombre" required>
             <input type="email" placeholder="Correo electrónico" required>
             <textarea placeholder="Mensaje" required></textarea>
             <button type="submit">Enviar</button>
+            <span>Tu mensaje ha sido enviado con éxito.</span>
         </form>
     </section>
 
@@ -216,15 +217,16 @@
         <div class="abajo">
             <div class="botones">
                 <h3>Interested in working together <span>?</span></h3>
-                <button>Get In Touch</button>
-                <button>Browse Projects</button>
+                <button>Contacto</button>
+                <button>Buscar Proyecto</button>
             </div>
             <div class="copy">
-                <p>&copy;2025 All Rights Reserved. Made by Pancho Pereyra</p>
+                <p>&copy;2025 All Rights Reserved. Hecho por Francisco Pereyra</p>
             </div>
         </div>
-
     </footer>
+
+    <button id="scroll-arriba" class="scroll-arriba">Arriba</button>
 
     <script src="js/app.js"></script>
 </body>
