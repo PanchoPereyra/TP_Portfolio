@@ -151,8 +151,9 @@ button:hover {
 
 .texto-hero {
   border-radius: 5px solid black;
-  max-width: 45%;
+  max-width: 50%;
   line-height: 2;
+  text-align: start;
 }
 
 
@@ -160,7 +161,7 @@ button:hover {
   font-size: 65px;
   display: block;
   line-height: 1.1;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 .botonHero {
