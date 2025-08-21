@@ -8,10 +8,7 @@ document.querySelector("#scroll-arriba").addEventListener("click", function() {
 
 
 //===================== Para cambiar a modo oscuro =====================
-let modoOscuro=document.getElementById("modoOscuro")
-
-modoOscuro.addEventListener('click',cambiarFondo)
-
+// let modoOscuro=document.getElementById("modoOscuro")
 // function cambiarFondo(){
 //   document.body.style.backgroundColor="black"
 //   document.body.style.color="white" // Cambia el color de las letras a blanco
@@ -36,3 +33,4 @@ function cambiarFondo() {
   }
 }
 
+modoOscuro.addEventListener('click',cambiarFondo)

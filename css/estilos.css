@@ -18,12 +18,12 @@
 html {
   scroll-behavior: smooth;
   /*para "suavizar" el paso*/
-  background-color: #f5f5f5;
+  /* background-color: #f5f5f5; */
 }
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f5f5f5;
+  /* background-color: #f5f5f5; */
   /* color: black; */
   padding: 1rem 1rem;
   line-height: 1.5;
@@ -71,7 +71,7 @@ p {
 }
 
 h2 {
-  margin: 1px 1px;
+  /* margin: 1px 1px; */
 }
 
 button {
@@ -105,7 +105,8 @@ button:hover {
 }
 
 .nav-links a {
-  color: black;
+  /* color: black; */
+  color: inherit;
   font-weight: 17px;
   position: relative;
   font-weight: bold;
@@ -156,6 +157,11 @@ button:hover {
   text-align: start;
 }
 
+.texto-hero h3{
+  display: block;
+  margin-top: 120px;
+}
+
 
 .h1-hero {
   font-size: 65px;
@@ -178,6 +184,10 @@ button:hover {
   display: flex;
   flex-direction: column;
 
+}
+
+.proyectos h2{
+  margin-top: 60px;
 }
 
 @media (min-width: 600px) {
@@ -216,7 +226,8 @@ button:hover {
   display: flex;
   justify-content: center;
   font-size: 1rem;
-  color: black;
+  /* color: black; */
+  color: inherit;
 }
 
 .tarjeta p {
@@ -246,9 +257,7 @@ button:hover {
 /************************* HASTA ACA PROYECTOS ******************************/
 .experiencia {
   /* background-color: #f5f5f5; */
-  margin-bottom: 60px;
-  margin-top: 15px;
-
+  margin-bottom: 30px;
 }
 
 .gridExperiencia {
@@ -259,7 +268,6 @@ button:hover {
   display: flex;
   flex-direction: column;
   padding: 1rem 0.5rem;
-
 }
 
 .grid:hover {
@@ -291,7 +299,6 @@ button:hover {
 
 .habilidades {
   /* border: 1px solid black; */
-  padding: 15px;
   text-align: center;
   /* background-color: #f5f5f5; */
 }
@@ -318,10 +325,6 @@ button:hover {
   margin-top: 15px;
   display: flex;
   flex-direction: column;
-}
-
-.miHistoria h2 {
-  padding-bottom: 15px;
 }
 
 /************************* HASTA ACA MI HISTORIA ******************************/
@@ -354,8 +357,8 @@ button:hover {
 
 input:focus,
 textarea:focus {
-  border-color: #28a745;
-  background-color: #f0fff4;
+  border-color: #0cac31;
+  background-color: #80dd99;
 }
 
 input:focus,
@@ -403,6 +406,7 @@ h3 {
   display: flex;
   text-align: center;
   width: 75%;
+  
 }
 
 
@@ -410,14 +414,17 @@ h3 {
   display: flex;
   align-items: center;
   gap: 17px;
+  color: inherit;
+  
 }
 
 .enlaceFooter a {
-  color: black;
+  /* color: black; */
   font-weight: 17px;
   position: relative;
   font-weight: bold;
   display: inline-block;
+  color: inherit;
 }
 
 .enlaceFooter a:hover {
@@ -485,17 +492,17 @@ input:checked+.slider {
 }
 
 input:checked+.slider::before {
-  transform: translateX(31px);
+  transform: translateX(25px);
 }
 
 /* Bolita */
 .slider::before {
   position: absolute;
   content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
+  height: 15px;
+  width: 15px;
+  left: 5px;
+  bottom: 5px;
   background-color: white;
   transition: 0.4s;
   border-radius: 50%;
@@ -524,11 +531,7 @@ input:checked+.slider::before {
 .switch {
   position: relative;
   display: inline-block;
-  width: 65px;
-  height: 34px;
+  width: 50px;
+  height: 25px;
 }
 
-
-/********************************************************************/
-/* PRUEBA BOTON ARRIBA */
-/********************************************************************/
