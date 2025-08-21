@@ -1,6 +1,3 @@
-// document.getElementById("menu-toggle").addEventListener("click", function() {
-//   document.getElementById("nav-links").classList.toggle("show");
-// });
 
 document.querySelector("#scroll-arriba").addEventListener("click", function() {
   window.scrollTo({
@@ -9,4 +6,33 @@ document.querySelector("#scroll-arriba").addEventListener("click", function() {
   });
 });
 
+
+//===================== Para cambiar a modo oscuro =====================
+let modoOscuro=document.getElementById("modoOscuro")
+
+modoOscuro.addEventListener('click',cambiarFondo)
+
+// function cambiarFondo(){
+//   document.body.style.backgroundColor="black"
+//   document.body.style.color="white" // Cambia el color de las letras a blanco
+// }
+
+//===================== Condicionales para que cambie de modo al hacer clic =====================
+let modoOscuroActivo = false;
+
+function cambiarFondo() {
+  if (modoOscuroActivo) {
+    document.body.style.backgroundColor = "white";
+    document.body.style.color = "black";
+    document.documentElement.style.backgroundColor = "white"; // Cambia el fondo de <html>
+    document.documentElement.style.color = "black";           // Cambia el color de texto de <html>
+    modoOscuroActivo = false;
+  } else {
+    document.body.style.backgroundColor = "black";
+    document.body.style.color = "white";
+    document.documentElement.style.backgroundColor = "black";
+    document.documentElement.style.color = "white";
+    modoOscuroActivo = true;
+  }
+}
 
